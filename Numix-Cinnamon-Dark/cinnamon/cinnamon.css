@@ -387,10 +387,12 @@ StScrollBar StButton#hhandle:focus {
    ===================================================================*/
 .panel-top {
   font-size: 9pt;
+  background-color: rgba(0, 0, 0, .8)
 }
 
 .panel-bottom {
   font-size: 9pt;
+  background-color: rgba(0, 0, 0, .8)
 }
 
 .panel-dummy {
@@ -1363,6 +1365,7 @@ StScrollBar StButton#hhandle:focus {
 /* Different images used in top & bottom panels. */
 .panel-top .window-list-item-box:hover {
   color: #ffffff;
+  border-image: url("panel-assets/panel-top-item-hover.svg") 4;
 }
 
 .panel-top .window-list-item-box:active,
@@ -1387,6 +1390,7 @@ StScrollBar StButton#hhandle:focus {
 
 .panel-bottom .window-list-item-box:hover {
   color: #ffffff;
+  border-image: url("panel-assets/panel-bottom-item-hover.svg") 4;
 }
 
 .panel-bottom .window-list-item-box:active,

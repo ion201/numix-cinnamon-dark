@@ -1,10 +1,10 @@
 {
    "cinnamon-theme": {
-        "name" : "Numix-Cinnamon-Transparent",
-        "author" : "edoz90",
-        "version" : "",
+        "name" : "Numix-Cinnamon-Dark",
+        "author" : "ion201",
+        "version" : "1.0",
         "type" : "custom",
         "thumbnail" : "thumbnail.png",
-        "url" : "https://github.com/edoz90/numix-cinnamon-transparent"
+        "url" : "https://github.com/ion201/numix-cinnamon-dark"
     }
 }
