@@ -1,4 +1,4 @@
-####A theme for cinnamon __3.2__
+A theme for cinnamon 3.2
 ---
 A fork of https://github.com/zagortenay333/numix-cinnamon
 
