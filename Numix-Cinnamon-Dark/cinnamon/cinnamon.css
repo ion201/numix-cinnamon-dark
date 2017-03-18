@@ -839,7 +839,7 @@ StScrollBar StButton#hhandle:focus {
   spacing: 4px;
 }
 
-#altTabPopup .switcher-list:last-child {
+#altTabPopup .switcher-list {
   border-image: url("background-assets/popup.svg") 7;
   color: #eeeeee;
   padding: 2px;
@@ -847,41 +847,16 @@ StScrollBar StButton#hhandle:focus {
   font-weight: bold;
 }
 
-#altTabPopup .switcher-list:last-child .item-box {
+#altTabPopup .switcher-list .item-box {
   padding: 10px;
 }
 
-#altTabPopup .switcher-list:last-child .item-box:selected {
-  border-image: none;
-  color: #eeeeee;
-}
-
-#altTabPopup .switcher-list:last-child .item-box StLabel {
-  padding-top: .8em;
-}
-
-#altTabPopup .switcher-list:first-child:last-child,
-#altTabPopup .switcher-list:first-child {
-  border-image: url("background-assets/popup.svg") 7;
-  color: #eeeeee;
-  padding: 2px;
-  font-size: 10pt;
-  font-weight: bold;
-}
-
-#altTabPopup .switcher-list:first-child:last-child .item-box,
-#altTabPopup .switcher-list:first-child .item-box {
-  padding: 10px;
-}
-
-#altTabPopup .switcher-list:first-child:last-child .item-box:selected,
-#altTabPopup .switcher-list:first-child .item-box:selected {
+#altTabPopup .switcher-list .item-box:selected {
   border-image: url("background-assets/hover.svg") 7;
   color: #ffffff;
 }
 
-#altTabPopup .switcher-list:first-child:last-child .item-box StLabel,
-#altTabPopup .switcher-list:first-child .item-box StLabel {
+#altTabPopup .switcher-list .item-box StLabel {
   padding-top: .4em;
 }
 
