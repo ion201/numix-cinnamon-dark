@@ -79,8 +79,6 @@ StScrollBar StButton#hhandle:focus {
 .menu-search-box StEntry,
 #notification StEntry {
   background-gradient-direction: vertical;
-  background-gradient-start: transparent;
-  background-gradient-end: transparent;
   border: 0;
   border-width: 0;
   box-shadow: 0 0 transparent;
@@ -178,7 +176,7 @@ StScrollBar StButton#hhandle:focus {
   background-image: url("widget-assets/check-box-checked.svg");
 }
 
-.check-box:focus:checked {
+.check-box:focus:checked StBin {
   background-image: url("widget-assets/check-box-focused-checked.svg");
 }
 
@@ -205,7 +203,7 @@ StScrollBar StButton#hhandle:focus {
   background-image: url("widget-assets/radiobutton-checked.svg");
 }
 
-.radiobutton:focus:checked {
+.radiobutton:focus:checked StBin {
   background-image: url("widget-assets/radiobutton-focused-checked.svg");
 }
 
@@ -243,7 +241,6 @@ StScrollBar StButton#hhandle:focus {
 /* ===================================================================
    ! Popup Menus
    ===================================================================*/
-/* TODO: !fix arrow, it's seems that cinnamon removed support for arrows */
 .popup-menu, .menu {
   min-width: 100px;
   background-color: #2d2d2d;
@@ -261,7 +258,6 @@ StScrollBar StButton#hhandle:focus {
 }
 
 .popup-menu .popup-menu-content, .menu .popup-menu-content {
-  border-image: url("background-assets/popup-inside.svg") 9;
   padding: .7em 0;
   color: #eeeeee;
 }
@@ -703,8 +699,6 @@ StScrollBar StButton#hhandle:focus {
 .notification-icon-button {
   background-color: transparent;
   background-gradient-direction: none;
-  background-gradient-start: transparent;
-  background-gradient-end: transparent;
   box-shadow: 0 0 transparent;
   border: none;
   border-width: 0;
@@ -906,8 +900,6 @@ StScrollBar StButton#hhandle:focus {
 .modal-dialog-button {
   background-color: transparent;
   background-gradient-direction: none;
-  background-gradient-start: transparent;
-  background-gradient-end: transparent;
   box-shadow: 0 0 transparent;
   border: none;
   border-width: 0;
@@ -1089,8 +1081,6 @@ StScrollBar StButton#hhandle:focus {
 .keyboard-key {
   background-color: transparent;
   background-gradient-direction: none;
-  background-gradient-start: transparent;
-  background-gradient-end: transparent;
   box-shadow: 0 0 transparent;
   border: none;
   border-width: 0;
@@ -1445,8 +1435,6 @@ StScrollBar StButton#hhandle:focus {
 .sound-player-overlay StButton {
   background-color: transparent;
   background-gradient-direction: none;
-  background-gradient-start: transparent;
-  background-gradient-end: transparent;
   box-shadow: 0 0 transparent;
   border: none;
   border-width: 0;
@@ -1623,18 +1611,22 @@ StScrollBar StButton#hhandle:focus {
 /* ===================================================================
    ! Panel Launchers Applet (panelLaunchers.js)
    ===================================================================*/
-.panel-launcher {
+.panel-launchers {
   margin: 0;
-  padding: 0 2px;
+  padding: 0px 1px;
+}
+
+.panel-launchers .launcher {
+  padding: 0px 3px;
 }
 
 /* Different images used in top & bottom panels. */
-.panel-top .panel-launcher:hover {
-  border-image: url("panel-assets/panel-top-item-active.svg") 4;
+.panel-top .panel-launchers .launcher:hover {
+  border-image: url("panel-assets/panel-top-item-hover.svg") 4;
 }
 
-.panel-bottom .panel-launcher:hover {
-  border-image: url("panel-assets/panel-bottom-item-active.svg") 4;
+.panel-bottom .panel-launchers .launcher:hover {
+  border-image: url("panel-assets/panel-bottom-item-hover.svg") 4;
 }
 
 /* ===================================================================
@@ -1915,8 +1907,6 @@ StScrollBar StButton#hhandle:focus {
 
 .weather-current-location-link:selected, .weather-current-location-link:hover {
   background-gradient-direction: vertical;
-  background-gradient-start: rgba(255, 255, 255, 0);
-  background-gradient-end: rgba(255, 255, 255, 0);
   color: #f0544c;
   text-decoration: underline;
 }
@@ -2111,8 +2101,6 @@ StScrollBar StButton#hhandle:focus {
 /* Entry */
 .slingshot .entry {
   background-gradient-direction: none;
-  background-gradient-start: transparent;
-  background-gradient-end: transparent;
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -2122,8 +2110,6 @@ StScrollBar StButton#hhandle:focus {
 
 .slingshot .entry:focus {
   background-gradient-direction: none;
-  background-gradient-start: transparent;
-  background-gradient-end: transparent;
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -2736,8 +2722,6 @@ StBoxLayout.applet-box.desktop-capture StBin {
 
 .sticky-text-box {
   background-gradient-direction: vertical;
-  background-gradient-start: transparent;
-  background-gradient-end: transparent;
   border: 0;
   border-width: 0;
   box-shadow: 0 0 transparent;
@@ -2772,8 +2756,6 @@ StBoxLayout.applet-box.desktop-capture StBin {
 
 .sticky-text-box:active {
   background-gradient-direction: vertical;
-  background-gradient-start: transparent;
-  background-gradient-end: transparent;
   border: 0;
   border-width: 0;
   box-shadow: 0 0 transparent;
@@ -2930,8 +2912,6 @@ StBoxLayout.applet-box.desktop-capture StBin {
 .calc-button {
   background-color: transparent;
   background-gradient-direction: none;
-  background-gradient-start: transparent;
-  background-gradient-end: transparent;
   box-shadow: 0 0 transparent;
   border: none;
   border-width: 0;
