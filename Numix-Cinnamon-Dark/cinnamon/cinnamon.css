@@ -381,14 +381,9 @@ StScrollBar StButton#hhandle:focus {
 /* ===================================================================
 ! Panel
 ====================================================================*/
-.panel-top {
+.panel-top, .panel-bottom, .panel-left, .panel-right {
     font-size: 9pt;
-    background-color: rgba(0, 0, 0, .8)
-}
-
-.panel-bottom {
-    font-size: 9pt;
-    background-color: rgba(0, 0, 0, .8)
+    background-color: rgba(0, 0, 0, .8);
 }
 
 .panel-dummy {
@@ -456,6 +451,9 @@ StScrollBar StButton#hhandle:focus {
 .panel-button:focus > .system-status-icon {
     icon-shadow: transparent 0;
 }
+
+
+
 
 /* ===================================================================
 ! Expo view
@@ -1322,16 +1320,22 @@ StScrollBar StButton#hhandle:focus {
 .window-list-item-box {
     color: #ffffff;
     font-weight: bold;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 5px;
+    padding-right: 2px;
     max-width: 10em;
 }
+
+.window-list-item-box StLabel {
+    padding-left: 3px;
+}
+
 
 /* Different images used in top & bottom panels. */
 .panel-top .window-list-item-box:hover {
     color: #ffffff;
     border-image: url("panel-assets/panel-top-item-hover.svg") 4;
 }
+
 
 .panel-top .window-list-item-box:active,
 .panel-top .window-list-item-box:checked,
