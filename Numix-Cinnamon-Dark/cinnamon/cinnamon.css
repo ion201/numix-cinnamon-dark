@@ -1756,6 +1756,7 @@ StScrollBar StButton#hhandle:focus {
 .menu-selected-app-box {
     padding-right: 30px;
     padding-left: 30px;
+    padding-bottom: 15px;
     text-align: right;
     height: 1.2em;
 }
